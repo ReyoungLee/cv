@@ -1,3 +1,7 @@
+.first{
+	font-style: normal;
+}
+
 #content{
 	.left{
 		float: left;
@@ -5,9 +9,6 @@
 	.right{
 		float: right;
 		width: 65%;
-	}
-	.b p{
-		line-height: 4;
 	}
 }
 #bar{
@@ -18,5 +19,8 @@
 	.value{
 		float: right;
 		width: 72%;
+	}
+	&+p{
+		line-height: 4;
 	}
 }
