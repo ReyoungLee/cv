@@ -15,7 +15,9 @@ ul {
 .icon {
   width: 24px;
   height: 24px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  outline: none;
+  border: none; }
 
 #bg {
   position: absolute;

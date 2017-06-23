@@ -1,0 +1,16 @@
+#content .left {
+  float: left; }
+#content .right {
+  float: right;
+  width: 65%; }
+#content .b p {
+  line-height: 4; }
+
+#bar .key {
+  float: left;
+  width: 24%; }
+#bar .value {
+  float: right;
+  width: 72%; }
+
+/*# sourceMappingURL=ie.css.map */

@@ -1,0 +1,22 @@
+#content{
+	.left{
+		float: left;
+	}
+	.right{
+		float: right;
+		width: 65%;
+	}
+	.b p{
+		line-height: 4;
+	}
+}
+#bar{
+	.key{
+		float: left;
+		width: 24%;
+	}
+	.value{
+		float: right;
+		width: 72%;
+	}
+}
