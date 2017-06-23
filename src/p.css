@@ -53,6 +53,7 @@ ul {
     #content h4 .icon {
       margin-top: -5px; }
     #content h4 em {
+      top: 1px;
       white-space: nowrap;
       position: relative;
       font-style: normal;
@@ -97,10 +98,7 @@ ul {
     flex: 1;
     padding: 30px 30px 30px 15px; }
   #content .b, #content .d {
-    margin-top: 30px;
-    padding-top: 1px; }
-  #content .a, #content .c {
-    padding-top: 1px; }
+    margin-top: 30px; }
   #content .a .first {
     float: left;
     font-style: normal;
@@ -117,7 +115,10 @@ ul {
     #content .d span {
       white-space: nowrap; }
 
-@media (max-width: 490px) {
+@media (max-width: 780px) {
+  #content .left {
+    width: 50%; } }
+@media (max-width: 500px) {
   #content {
     display: block; }
     #content .left, #content .right {
@@ -157,7 +158,7 @@ ul {
       height: 40px; }
       #bar .value li:nth-child(1) {
         background-color: #007ac6;
-        width: 80%; }
+        width: 96%; }
       #bar .value li:nth-child(2) {
         background-color: #328ed5;
         width: 87%; }
@@ -166,6 +167,6 @@ ul {
         width: 73%; }
       #bar .value li:nth-child(4) {
         background-color: #88cafc;
-        width: 90%; }
+        width: 92%; }
 
 /*# sourceMappingURL=p.css.map */
