@@ -22,6 +22,11 @@ ul{
 	padding: 0;
 	margin: 0;
 }
+.icon{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
 #bg{
 	position: absolute;
 	top: 0;
@@ -42,6 +47,7 @@ $dblue: #0c63a9;
 	}
 	p{
 		line-height: 2;
+		font-size: 16px;
 	}
 	a{
 		color: $dblue;
@@ -51,15 +57,14 @@ $dblue: #0c63a9;
 	h5{
 		color: $dblue;
 		font-size: 16px;
+		margin: 18px 0;
 	}
 	h4{
 		border-bottom: 2px $blue solid;
 		margin: 0;
 		min-width: 128px;
-		img{
-			width: 24px;
-			height: 24px;
-			vertical-align: middle;
+		font-size: 17px;
+		.icon{
 			margin-top: -5px;
 		}
 		em{
@@ -81,7 +86,7 @@ $dblue: #0c63a9;
 				border-style: solid;
 			}
 			&::before{
-				left: -18.4px;
+				left: -18px;
 				border-width: 16px 9.2px;
 				border-color: transparent $blue transparent transparent;
 			}
@@ -99,7 +104,6 @@ $dblue: #0c63a9;
 		display: block;
 		box-sizing: border-box;
 		>div{
-			// box-shadow: 0 0 1px $blue inset;
 			height: 100%;
 		}
 	}
@@ -118,11 +122,31 @@ $dblue: #0c63a9;
 	}
 	.b, .d{
 		margin-top: $p;
+		padding-top: 1px;	// to fix strange bug that the title and border separate
+	}
+	.a, .c{
+		padding-top: 1px;	// to fix strange bug that the title and border separate
+	}
+	.a{
+		.first{
+			float: left;
+			font-style: normal;
+			font-size: 48px;
+			line-height: 63px;
+			padding-left: 32px;
+			padding-right: 4px;
+		}
 	}
 	.d{
 		background: url(../img/sign.svg) right bottom no-repeat;
 		background-size: 20%;
-		padding-bottom: 20%;
+		padding-bottom: 20px;
+		p{
+			line-height: 1.8;
+		}
+		span{
+			white-space: nowrap;
+		}
 	}
 
 }
@@ -147,6 +171,7 @@ $dblue: #0c63a9;
 		}
 		.d{
 			background-size: 40%;
+			padding-bottom: 36px;
 		}
 	}
 }
@@ -160,20 +185,15 @@ $dblue: #0c63a9;
 	.key{
 		text-align: right;
 		line-height: 40px;
-		max-width: 38%;
+		width: 120px;
 		padding-right: 3%;
 		white-space: nowrap;
 		color: $dblue;
 		font-weight: bold;
-		img{
-			width: 24px;
-			height: 24px;
-			vertical-align: middle;
-		}
 	}
 	.value{
 		@include flex();
-		border-left: 2px $blue solid;
+		border-left: 1.9px $blue solid;	//the border separates from it if 2px
 		li{
 			height: 40px;
 			&:nth-child(1){

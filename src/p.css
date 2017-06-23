@@ -12,6 +12,11 @@ ul {
   padding: 0;
   margin: 0; }
 
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle; }
+
 #bg {
   position: absolute;
   top: 0;
@@ -30,22 +35,22 @@ ul {
     transition: .2s ease-out;
     -webkit-transition: .2s ease-out; }
   #content p {
-    line-height: 2; }
+    line-height: 2;
+    font-size: 16px; }
   #content a {
     color: #0c63a9;
     text-decoration: none;
     font-style: italic; }
   #content h5 {
     color: #0c63a9;
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 18px 0; }
   #content h4 {
     border-bottom: 2px #0f88eb solid;
     margin: 0;
-    min-width: 128px; }
-    #content h4 img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle;
+    min-width: 128px;
+    font-size: 17px; }
+    #content h4 .icon {
       margin-top: -5px; }
     #content h4 em {
       white-space: nowrap;
@@ -65,7 +70,7 @@ ul {
         height: 0;
         border-style: solid; }
       #content h4 em::before {
-        left: -18.4px;
+        left: -18px;
         border-width: 16px 9.2px;
         border-color: transparent #0f88eb transparent transparent; }
       #content h4 em::after {
@@ -92,11 +97,25 @@ ul {
     flex: 1;
     padding: 30px 30px 30px 15px; }
   #content .b, #content .d {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding-top: 1px; }
+  #content .a, #content .c {
+    padding-top: 1px; }
+  #content .a .first {
+    float: left;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 63px;
+    padding-left: 32px;
+    padding-right: 4px; }
   #content .d {
     background: url(../img/sign.svg) right bottom no-repeat;
     background-size: 20%;
-    padding-bottom: 20%; }
+    padding-bottom: 20px; }
+    #content .d p {
+      line-height: 1.8; }
+    #content .d span {
+      white-space: nowrap; }
 
 @media (max-width: 490px) {
   #content {
@@ -112,7 +131,8 @@ ul {
     #content .b, #content .d {
       margin-top: 20px; }
     #content .d {
-      background-size: 40%; } }
+      background-size: 40%;
+      padding-bottom: 36px; } }
 #bar {
   display: -webkit-box;
   display: -webkit-flex;
@@ -123,20 +143,16 @@ ul {
   #bar .key {
     text-align: right;
     line-height: 40px;
-    max-width: 38%;
+    width: 120px;
     padding-right: 3%;
     white-space: nowrap;
     color: #0c63a9;
     font-weight: bold; }
-    #bar .key img {
-      width: 24px;
-      height: 24px;
-      vertical-align: middle; }
   #bar .value {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     flex: 1;
-    border-left: 2px #0f88eb solid; }
+    border-left: 1.9px #0f88eb solid; }
     #bar .value li {
       height: 40px; }
       #bar .value li:nth-child(1) {
