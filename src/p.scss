@@ -30,7 +30,7 @@ ul{
 	border: none;
 }
 #bg{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	overflow: hidden;
@@ -135,6 +135,9 @@ $dblue: #0c63a9;
 			padding-left: 32px;
 			padding-right: 4px;
 		}
+	}
+	.b p{
+		line-height: 1.8;
 	}
 	.d{
 		background: url(../img/sign.svg) right bottom no-repeat;
