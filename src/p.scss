@@ -8,6 +8,24 @@
 	-webkit-flex: 1;
 	flex: 1;
 }
+@font-face {
+	font-family: iconfont;
+	src: url('../font/iconfont.eot'), /* IE9*/
+		 url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../font/iconfont.woff') format('woff'),
+		 url('../font/iconfont.ttf') format('truetype');
+}
+
+$blue: #0f88eb;
+$dblue: #0c63a9;
+.iconfont{
+	font-family: iconfont!important;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	color: $blue;
+}
 body{
 	background: #f7fafc;
 }
@@ -35,8 +53,6 @@ ul{
 	left: 0;
 	overflow: hidden;
 }
-$blue: #0f88eb;
-$dblue: #0c63a9;
 #content{
 	@include flexbox();
 	box-sizing: border-box;
