@@ -196,6 +196,9 @@ $dblue: #0c63a9;
 		white-space: nowrap;
 		color: $dblue;
 		font-weight: bold;
+		.icon{
+			font-size: 22px;
+		}
 	}
 	.value{
 		@include flex();

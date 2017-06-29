@@ -153,6 +153,8 @@ ul {
     white-space: nowrap;
     color: #0c63a9;
     font-weight: bold; }
+    #bar .key .icon {
+      font-size: 22px; }
   #bar .value {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
