@@ -3,7 +3,6 @@
   src: url("../font/iconfont.eot"), url("../font/iconfont.eot#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"); }
 .iconfont {
   font-family: iconfont !important;
-  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -129,6 +128,8 @@ ul {
       line-height: 1.8; }
     #content .d span {
       white-space: nowrap; }
+    #content .d .iconfont {
+      font-size: 16px; }
 
 @media (max-width: 780px) {
   #content .left {
@@ -164,9 +165,8 @@ ul {
     white-space: nowrap;
     color: #0c63a9;
     font-weight: bold; }
-    #bar .key .icon {
-      width: 22px;
-      height: 22px; }
+    #bar .key .iconfont {
+      font-size: 22px; }
   #bar .value {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
