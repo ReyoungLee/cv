@@ -1,3 +1,8 @@
+$blue: #0f88eb;
+$dblue: #0c63a9;
+$red: #d84830;
+$org: #fb9a00;
+$dorg: #fa7f02;
 @mixin flexbox(){
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -10,14 +15,11 @@
 }
 @font-face {
 	font-family: iconfont;
-	src: url('../font/iconfont.eot'), /* IE9*/
-		 url('../font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	src: url('../font/iconfont.eot'),
 		 url('../font/iconfont.woff') format('woff'),
 		 url('../font/iconfont.ttf') format('truetype');
 }
 
-$blue: #0f88eb;
-$dblue: #0c63a9;
 .iconfont{
 	font-family: iconfont!important;
 	font-style: normal;
@@ -238,6 +240,96 @@ ul{
 			&:nth-child(4){
 				background-color: #88cafc;
 				width: 92%;
+			}
+		}
+	}
+}
+
+body.theme-n{
+	.iconfont{
+		color: $red;
+	}
+	#content{
+		h4{
+			border-bottom: 2px $red solid;
+			em{
+				background: $red;
+				&::before{
+					border-color: transparent $red transparent transparent;
+				}
+				&::after{
+					border-color: transparent transparent transparent $red;
+				}
+			}
+		}
+		a, h5{
+			color: $red;
+		}
+	}
+	#bar{
+		.key{
+			color: $red;
+		}
+		.value{
+			border-left: 1.9px $red solid;
+			li{
+				&:nth-child(1){
+					background-color: #df3b3b;
+				}
+				&:nth-child(2){
+					background-color: #e94f4f;
+				}
+				&:nth-child(3){
+					background-color: #f66767;
+				}
+				&:nth-child(4){
+					background-color: #fc7e7e;
+				}
+			}
+		}
+	}
+}
+
+body.theme-a{
+	.iconfont{
+		color: $dorg;
+	}
+	#content{
+		h4{
+			border-bottom: 2px $org solid;
+			em{
+				background: $org;
+				&::before{
+					border-color: transparent $org transparent transparent;
+				}
+				&::after{
+					border-color: transparent transparent transparent $org;
+				}
+			}
+		}
+		a, h5{
+			color: $dorg;
+		}
+	}
+	#bar{
+		.key{
+			color: $dorg;
+		}
+		.value{
+			border-left: 1.9px $dorg solid;
+			li{
+				&:nth-child(1){
+					background-color: #ea7804;
+				}
+				&:nth-child(2){
+					background-color: #ff8100;
+				}
+				&:nth-child(3){
+					background-color: #fc9326;
+				}
+				&:nth-child(4){
+					background-color: #ffa74c;
+				}
 			}
 		}
 	}
