@@ -158,16 +158,16 @@ ul {
     border-left: 1.9px #0f88eb solid; }
     #bar .value li {
       height: 40px; }
-      #bar .value li::nth-child(1) {
+      #bar .value li:nth-child(1) {
         background-color: #007ac6;
         width: 96%; }
-      #bar .value li::nth-child(2) {
+      #bar .value li:nth-child(2) {
         background-color: #328ed5;
         width: 87%; }
-      #bar .value li::nth-child(3) {
+      #bar .value li:nth-child(3) {
         background-color: #63b9fb;
         width: 79%; }
-      #bar .value li::nth-child(4) {
+      #bar .value li:nth-child(4) {
         background-color: #88cafc;
         width: 92%; }
 
