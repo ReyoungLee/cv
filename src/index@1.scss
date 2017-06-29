@@ -13,6 +13,10 @@ $dorg: #fa7f02;
 	-webkit-flex: 1;
 	flex: 1;
 }
+@mixin transition($time){
+	transition: $time ease-out;
+	-webkit-transition: $time ease-out;
+}
 @font-face {
 	font-family: iconfont;
 	src: url('../font/iconfont.eot'),
@@ -56,13 +60,14 @@ ul{
 }
 #content{
 	@include flexbox();
+	@include transition(.4s);
+	opacity: 0;
 	box-sizing: border-box;
 	position: absolute;
 	z-index: 2;
 	color: #444;
 	.left, .right, section{
-		transition: .2s ease-out;
-		-webkit-transition: .2s ease-out;
+		@include transition(.2s);
 	}
 	p{
 		line-height: 2;

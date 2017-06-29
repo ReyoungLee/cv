@@ -39,13 +39,16 @@ ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  transition: 0.4s ease-out;
+  -webkit-transition: 0.4s ease-out;
+  opacity: 0;
   box-sizing: border-box;
   position: absolute;
   z-index: 2;
   color: #444; }
   #content .left, #content .right, #content section {
-    transition: .2s ease-out;
-    -webkit-transition: .2s ease-out; }
+    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease-out; }
   #content p {
     line-height: 2;
     font-size: 16px; }

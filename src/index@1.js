@@ -5,7 +5,8 @@
 	particlesJS.load('bg', 'src/opt.json');
 
 	document.body.className = 'theme-' + theme;
-
+	document.getElementById('content').style.opacity = '1';
+	
 	window.adaptIE = function(){
 
 		var link = document.createElement('link');
