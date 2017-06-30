@@ -150,6 +150,7 @@ ul{
 	}
 	.a{
 		.first{
+			color: $dblue;
 			float: left;
 			font-style: normal;
 			font-size: 48px;
@@ -255,6 +256,9 @@ body.theme-n{
 		color: $red;
 	}
 	#content{
+		.a .first{
+			color: $red;
+		}
 		h4{
 			border-bottom: 2px $red solid;
 			em{
@@ -300,6 +304,9 @@ body.theme-a{
 		color: $dorg;
 	}
 	#content{
+		.a .first{
+			color: $dorg;
+		}
 		h4{
 			border-bottom: 2px $org solid;
 			em{

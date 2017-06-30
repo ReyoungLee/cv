@@ -115,6 +115,7 @@ ul {
   #content .b, #content .d {
     margin-top: 30px; }
   #content .a .first {
+    color: #0c63a9;
     float: left;
     font-style: normal;
     font-size: 48px;
@@ -192,6 +193,8 @@ ul {
 
 body.theme-n .iconfont {
   color: #d84830; }
+body.theme-n #content .a .first {
+  color: #d84830; }
 body.theme-n #content h4 {
   border-bottom: 2px #d84830 solid; }
   body.theme-n #content h4 em {
@@ -216,6 +219,8 @@ body.theme-n #bar .value {
     background-color: #fc7e7e; }
 
 body.theme-a .iconfont {
+  color: #fa7f02; }
+body.theme-a #content .a .first {
   color: #fa7f02; }
 body.theme-a #content h4 {
   border-bottom: 2px #fb9a00 solid; }
