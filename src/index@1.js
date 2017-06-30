@@ -1,7 +1,7 @@
 
 (function () {
 
-	var theme = location.hash.substr(1);
+	var theme = location.search.substr(1);
 	particlesJS.load('bg', 'src/opt.json');
 
 	document.body.className = 'theme-' + theme;
