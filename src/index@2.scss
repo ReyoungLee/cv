@@ -3,6 +3,7 @@ $dblue: #0c63a9;
 $red: #d84830;
 $org: #fb9a00;
 $dorg: #fa7f02;
+$morg: #ff6700;
 @mixin flexbox(){
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -161,6 +162,14 @@ ul{
 	}
 	.b p{
 		line-height: 1.8;
+	}
+	.c{
+		p{
+			margin: 5px 0;
+		}
+		h5{
+			margin: 15px 0 5px 0;
+		}
 	}
 	.d{
 		background: url(../img/sign.svg) right bottom no-repeat;
@@ -341,6 +350,54 @@ body.theme-a{
 				}
 				&:nth-child(4){
 					background-color: #ffa74c;
+				}
+			}
+		}
+	}
+}
+
+body.theme-m{
+	.iconfont{
+		color: $morg;
+	}
+	#content{
+		.a .first{
+			color: $morg;
+		}
+		h4{
+			border-bottom: 2px $morg solid;
+			em{
+				background: $morg;
+				&::before{
+					border-color: transparent $morg transparent transparent;
+				}
+				&::after{
+					border-color: transparent transparent transparent $morg;
+				}
+			}
+		}
+		a, h5{
+			color: $morg;
+		}
+	}
+	#bar{
+		.key{
+			color: $morg;
+		}
+		.value{
+			border-left: 1.9px $morg solid;
+			li{
+				&:nth-child(1){
+					background-color: #ff6700;
+				}
+				&:nth-child(2){
+					background-color: #fc802b;
+				}
+				&:nth-child(3){
+					background-color: #ff964e;
+				}
+				&:nth-child(4){
+					background-color: #ffad75;
 				}
 			}
 		}

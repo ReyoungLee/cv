@@ -19,7 +19,8 @@
 			widths = ['96%','87%','79%','92%'];
 		var themes = {
 			n: ['#df3b3b','#e94f4f','#f66767','#fc7e7e'],
-			a: ['#ea7804','#ff8100','#fc9326','#ffa74c']
+			a: ['#ea7804','#ff8100','#fc9326','#ffa74c'],
+			m: ['#ff6700','#fc802b','#ff964e','#ffad75']
 		};
 
 		colors = themes[theme] || colors;
