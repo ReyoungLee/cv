@@ -128,6 +128,9 @@ ul {
     margin: 5px 0; }
   #content .c h5 {
     margin: 15px 0 5px 0; }
+  #content .c .employer {
+    font-style: italic;
+    font-size: 14px; }
   #content .d {
     background: url(../img/sign.svg) right bottom no-repeat;
     background-size: 20%;
