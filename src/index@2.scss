@@ -139,7 +139,7 @@ ul{
 	}
 	$p: 30px;
 	.left{
-		width: 30%;
+		width: 32%;
 		padding: $p $p/2 $p $p;
 	}
 	.right{
@@ -160,8 +160,11 @@ ul{
 			padding-right: 4px;
 		}
 	}
-	.b p{
+	.b .skills{
 		line-height: 1.8;
+		li{
+			margin-bottom: 8px;
+		}
 	}
 	.c{
 		p{

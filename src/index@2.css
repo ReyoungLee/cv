@@ -141,7 +141,7 @@ ul {
 }
 
 #content .left {
-  width: 30%;
+  width: 32%;
   padding: 30px 15px 30px 30px;
 }
 
@@ -166,8 +166,12 @@ ul {
   padding-right: 4px;
 }
 
-#content .b p {
+#content .b .skills {
   line-height: 1.8;
+}
+
+#content .b .skills li {
+  margin-bottom: 8px;
 }
 
 #content .c p {
