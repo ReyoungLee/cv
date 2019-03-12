@@ -19,10 +19,17 @@ $morg: #ff6700;
 	-webkit-transition: $time ease-out;
 }
 @font-face {
-	font-family: iconfont;
-	src: url('../font/iconfont.eot'),
-		 url('../font/iconfont.woff') format('woff'),
-		 url('../font/iconfont.ttf') format('truetype');
+	// font-family: iconfont;
+	// src: url('../font/iconfont.eot'),
+	// 	 url('../font/iconfont.woff') format('woff'),
+	// 	 url('../font/iconfont.ttf') format('truetype');
+	font-family: 'iconfont';  /* project id 340373 */
+	src: url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.eot');
+	src: url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.woff2') format('woff2'),
+	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.woff') format('woff'),
+	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.svg#iconfont') format('svg');
 }
 
 .iconfont{
@@ -89,8 +96,9 @@ ul{
 		margin: 0;
 		min-width: 128px;
 		font-size: 17px;
-		.icon{
-			margin-top: -5px;
+		.iconfont{
+			margin: -5px 5px 0 5px;
+			color: #fff;
 		}
 		em{
 			top: 1px;	// to fix strange bug that the title and border separate
@@ -226,14 +234,15 @@ ul{
 
 #bar{
 	@include flexbox();
+	$barh: 30px;
 	ul{
-		padding: 30px 0;
-		margin-top: 30px;
+		padding: 20px 0 10px 0;
+		margin: 20px 0;
 	}
 	.key{
 		text-align: right;
-		line-height: 40px;
-		width: 120px;
+		line-height: $barh;
+		width: 130px;
 		padding-right: 3%;
 		white-space: nowrap;
 		color: $dblue;
@@ -246,22 +255,25 @@ ul{
 		@include flex();
 		border-left: 1.9px $blue solid;	//the border separates from it if 2px
 		li{
-			height: 40px;
+			height: $barh;
+			background-color: $blue;
+			&:nth-child(even) {
+				opacity: .7;
+			}
 			&:nth-child(1){
-				background-color: #007ac6;
 				width: 96%;
 			}
 			&:nth-child(2){
-				background-color: #328ed5;
 				width: 87%;
 			}
 			&:nth-child(3){
-				background-color: #63b9fb;
 				width: 79%;
 			}
 			&:nth-child(4){
-				background-color: #88cafc;
-				width: 92%;
+				width: 32%;
+			}
+			&:nth-child(5){
+				width: 78%;
 			}
 		}
 	}
@@ -298,18 +310,7 @@ body.theme-n{
 		.value{
 			border-left: 1.9px $red solid;
 			li{
-				&:nth-child(1){
-					background-color: #df3b3b;
-				}
-				&:nth-child(2){
-					background-color: #e94f4f;
-				}
-				&:nth-child(3){
-					background-color: #f66767;
-				}
-				&:nth-child(4){
-					background-color: #fc7e7e;
-				}
+				background-color: $red;
 			}
 		}
 	}
@@ -346,18 +347,7 @@ body.theme-a{
 		.value{
 			border-left: 1.9px $dorg solid;
 			li{
-				&:nth-child(1){
-					background-color: #ea7804;
-				}
-				&:nth-child(2){
-					background-color: #ff8100;
-				}
-				&:nth-child(3){
-					background-color: #fc9326;
-				}
-				&:nth-child(4){
-					background-color: #ffa74c;
-				}
+				background-color: $org;
 			}
 		}
 	}
@@ -394,18 +384,7 @@ body.theme-m{
 		.value{
 			border-left: 1.9px $morg solid;
 			li{
-				&:nth-child(1){
-					background-color: #ff6700;
-				}
-				&:nth-child(2){
-					background-color: #fc802b;
-				}
-				&:nth-child(3){
-					background-color: #ff964e;
-				}
-				&:nth-child(4){
-					background-color: #ffad75;
-				}
+				background-color: $morg;
 			}
 		}
 	}
