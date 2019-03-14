@@ -23,17 +23,17 @@ $morg: #ff6700;
 	-webkit-transform: $func;
 }
 @font-face {
-	// font-family: iconfont;
 	// src: url('../font/iconfont.eot'),
 	// 	 url('../font/iconfont.woff') format('woff'),
 	// 	 url('../font/iconfont.ttf') format('truetype');
-	font-family: 'iconfont';
-	src: url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.eot');
-	src: url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.eot?#iefix') format('embedded-opentype'),
-	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.woff2') format('woff2'),
-	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.woff') format('woff'),
-	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.ttf') format('truetype'),
-	url('//at.alicdn.com/t/font_340373_obuiqvwdfjg.svg#iconfont') format('svg');
+	font-family: 'iconfont';  /* project id 340373 */
+	src: url('//at.alicdn.com/t/font_340373_jv19ays9ox.eot');
+	src: url('//at.alicdn.com/t/font_340373_jv19ays9ox.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.woff2') format('woff2'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.woff') format('woff'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.svg#iconfont') format('svg');
+
 }
 
 .iconfont{
@@ -251,7 +251,16 @@ ul{
 		color: $dblue;
 		font-weight: bold;
 		.iconfont{
-			font-size: 22px;
+			font-size: 20px;
+			margin-left: 3px;
+			&.sass {
+				font-size: 16px;
+				position: relative;
+				left: 2px;
+			}
+			&.js {
+				font-size: 22px;
+			}
 		}
 	}
 	.value{
@@ -267,15 +276,18 @@ ul{
 				width: 96%;
 			}
 			&:nth-child(2){
-				width: 87%;
-			}
-			&:nth-child(3){
 				width: 79%;
 			}
+			&:nth-child(3){
+				width: 87%;
+			}
 			&:nth-child(4){
-				width: 32%;
+				width: 62%;
 			}
 			&:nth-child(5){
+				width: 32%;
+			}
+			&:nth-child(6){
 				width: 78%;
 			}
 		}

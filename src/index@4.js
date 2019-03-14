@@ -16,7 +16,7 @@
 
 		var bars = document.querySelectorAll('#bar .value li'),
 			// colors = ['#007ac6','#328ed5','#63b9fb','#88cafc'],
-			widths = ['96%','87%','79%','32%','78%']
+			widths = ['96%','79%','87%','62%','32%','78%']
 		// var themes = {
 		// 	n: ['#df3b3b','#e94f4f','#f66767','#fc7e7e'],
 		// 	a: ['#ea7804','#ff8100','#fc9326','#ffa74c'],
