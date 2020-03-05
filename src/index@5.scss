@@ -1,0 +1,407 @@
+$blue: #0f88eb;
+$dblue: #0c63a9;
+$red: #d84830;
+$org: #fb9a00;
+$dorg: #fa7f02;
+$morg: #ff6700;
+
+@mixin flexbox(){
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin flex(){
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+@mixin transition($time){
+	transition: $time ease-out;
+	-webkit-transition: $time ease-out;
+}
+@mixin transform($func){
+	transform: $func;
+	-webkit-transform: $func;
+}
+@font-face {
+	// src: url('../font/iconfont.eot'),
+	// 	 url('../font/iconfont.woff') format('woff'),
+	// 	 url('../font/iconfont.ttf') format('truetype');
+	font-family: 'iconfont';  /* project id 340373 */
+	src: url('//at.alicdn.com/t/font_340373_jv19ays9ox.eot');
+	src: url('//at.alicdn.com/t/font_340373_jv19ays9ox.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.woff2') format('woff2'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.woff') format('woff'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_340373_jv19ays9ox.svg#iconfont') format('svg');
+
+}
+
+.iconfont{
+	font-family: iconfont!important;
+	font-style: normal;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	color: $blue;
+}
+body{
+	background: #f7fafc;
+}
+body, html, #bg, #content{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.icon{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	outline: none;
+	border: none;
+}
+#bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#content{
+	@include flexbox();
+	@include transition(.4s);
+	opacity: 0;
+	box-sizing: border-box;
+	position: absolute;
+	z-index: 2;
+	color: #444;
+	.left, .right, section{
+		@include transition(.2s);
+	}
+	p{
+		line-height: 2;
+		font-size: 16px;
+	}
+	a{
+		color: $dblue;
+		text-decoration: none;
+		font-style: italic;
+	}
+	h5{
+		color: $dblue;
+		font-size: 16px;
+		margin: 18px 0;
+	}
+	h4{
+		border-bottom: 1px $blue solid;
+		margin: 0;
+		min-width: 128px;
+		font-size: 17px;
+		.iconfont{
+			margin: -5px 5px 0 5px;
+			color: #fff;
+		}
+		em{
+			white-space: nowrap;
+			position: relative;
+			font-style: normal;
+			background: $blue;
+			color: #fff;
+			display: inline-block;
+			width: 110px;
+			height: 30px;
+			line-height: 32px;
+			&::before, &::after{
+				position: absolute;
+				display: block;
+				content: '';
+				width: 0;
+				height: 0;
+				border-style: solid;
+			}
+			&::before{
+				left: -18px;
+				border-width: 16px 9.2px;
+				border-color: transparent $blue transparent transparent;
+			}
+			&::after{
+				border-width: 32px 18.4px;
+				border-color: transparent transparent transparent $blue;
+				top: 0;
+				right: -36.4px;
+				clip: rect(0 19px 30px 0);
+			}
+		}
+	}
+	section{
+		width: 100%;
+		display: block;
+		box-sizing: border-box;
+		>div{
+			height: 100%;
+		}
+	}
+	.left, .right{
+		box-sizing: border-box;
+		min-height: 100%;
+	}
+	$p: 30px;
+	.left{
+		width: 32%;
+		padding: $p $p/2 $p $p;
+	}
+	.right{
+		@include flex();
+		padding: $p $p $p $p/2;
+	}
+	.b, .d{
+		margin-top: $p;
+	}
+	.a{
+		.first{
+			color: $dblue;
+			float: left;
+			font-style: normal;
+			font-size: 48px;
+			line-height: 63px;
+			padding-left: 32px;
+			padding-right: 4px;
+		}
+	}
+	.b .skills{
+		line-height: 1.8;
+		li{
+			margin-bottom: 8px;
+		}
+	}
+	.c{
+		p{
+			margin: 5px 0;
+		}
+		h5{
+			margin: 10px 0 5px 0;
+		}
+		.employer{
+			font-style: italic;
+			font-size: 14px;
+		}
+	}
+	.d{
+		background: url(../img/sign.svg) right bottom no-repeat;
+		background-size: 20%;
+		padding-bottom: 20px;
+		p{
+			line-height: 1.8;
+		}
+		span{
+			white-space: nowrap;
+		}
+		.iconfont{
+			font-size: 16px;
+		}
+	}
+
+}
+@media(max-width:780px){
+	#content .left{
+		width: 50%;
+	}
+}
+@media(max-width:500px){
+	#content{
+		display: block;
+		.left, .right{
+			min-height: auto;
+			width: 100%;
+			float: none;
+		}
+		$p: 20px;
+		.left{
+			padding: $p $p $p/2 $p;
+		}
+		.right{
+			padding: $p/2 $p $p $p;
+		}
+		.b, .d{
+			margin-top: $p;
+		}
+		.d{
+			background-size: 40%;
+			padding-bottom: 36px;
+		}
+	}
+}
+
+#bar{
+	@include flexbox();
+	$barh: 30px;
+	ul{
+		padding: 20px 0 10px 0;
+		margin: 20px 0;
+	}
+	.key{
+		text-align: right;
+		line-height: $barh;
+		width: 130px;
+		padding-right: 3%;
+		white-space: nowrap;
+		color: $dblue;
+		font-weight: bold;
+		.iconfont{
+			font-size: 20px;
+			margin-left: 3px;
+			&.sass {
+				font-size: 16px;
+				position: relative;
+				left: 2px;
+			}
+			&.js {
+				font-size: 22px;
+			}
+		}
+	}
+	.value{
+		@include flex();
+		border-left: 1px $blue solid;	//the border separates from it if 2px
+		li{
+			height: $barh;
+			background-color: $blue;
+			&:nth-child(even) {
+				opacity: .7;
+			}
+			&:nth-child(1){
+				width: 96%;
+			}
+			&:nth-child(2){
+				width: 79%;
+			}
+			&:nth-child(3){
+				width: 87%;
+			}
+			&:nth-child(4){
+				width: 62%;
+			}
+			&:nth-child(5){
+				width: 42%;
+			}
+			&:nth-child(6){
+				width: 78%;
+			}
+		}
+	}
+}
+
+body.theme-n{
+	.iconfont{
+		color: $red;
+	}
+	#content{
+		.a .first{
+			color: $red;
+		}
+		h4{
+			border-color: $red;
+			em{
+				background: $red;
+				&::before{
+					border-right-color: $red;
+				}
+				&::after{
+					border-left-color: $red;
+				}
+			}
+		}
+		a, h5{
+			color: $red;
+		}
+	}
+	#bar{
+		.key{
+			color: $red;
+		}
+		.value{
+			border-color: $red;
+			li{
+				background-color: $red;
+			}
+		}
+	}
+}
+
+body.theme-a{
+	.iconfont{
+		color: $dorg;
+	}
+	#content{
+		.a .first{
+			color: $dorg;
+		}
+		h4{
+			border-color: $org;
+			em{
+				background: $org;
+				&::before{
+					border-right-color: $org;
+				}
+				&::after{
+					border-left-color: $org;
+				}
+			}
+		}
+		a, h5{
+			color: $dorg;
+		}
+	}
+	#bar{
+		.key{
+			color: $dorg;
+		}
+		.value{
+			border-color: $dorg;
+			li{
+				background-color: $org;
+			}
+		}
+	}
+}
+
+body.theme-m{
+	.iconfont{
+		color: $morg;
+	}
+	#content{
+		.a .first{
+			color: $morg;
+		}
+		h4{
+			border-color: $morg;
+			em{
+				background: $morg;
+				&::before{
+					border-right-color: $morg;
+				}
+				&::after{
+					border-left-color: $morg;
+				}
+			}
+		}
+		a, h5{
+			color: $morg;
+		}
+	}
+	#bar{
+		.key{
+			color: $morg;
+		}
+		.value{
+			border-color: $morg;
+			li{
+				background-color: $morg;
+			}
+		}
+	}
+}
