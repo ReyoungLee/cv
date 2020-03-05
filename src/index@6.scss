@@ -125,15 +125,16 @@ ul{
 			}
 			&::before{
 				left: -18px;
-				border-width: 16px 9.2px;
+				top: 0;
+				border-width: 15.5px 9px;
 				border-color: transparent $blue transparent transparent;
 			}
 			&::after{
 				border-width: 32px 18.4px;
 				border-color: transparent transparent transparent $blue;
 				top: 0;
-				right: -36.4px;
-				clip: rect(0 19px 30px 0);
+				right: -36.8px;
+				clip: rect(0 19px 31px 0);
 			}
 		}
 	}
