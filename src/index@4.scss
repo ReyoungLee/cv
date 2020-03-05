@@ -4,6 +4,7 @@ $red: #d84830;
 $org: #fb9a00;
 $dorg: #fa7f02;
 $morg: #ff6700;
+
 @mixin flexbox(){
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -96,7 +97,7 @@ ul{
 		margin: 18px 0;
 	}
 	h4{
-		border-bottom: 2px $blue solid;
+		border-bottom: 1px $blue solid;
 		margin: 0;
 		min-width: 128px;
 		font-size: 17px;
@@ -265,7 +266,7 @@ ul{
 	}
 	.value{
 		@include flex();
-		border-left: 1.9px $blue solid;	//the border separates from it if 2px
+		border-left: 1px $blue solid;	//the border separates from it if 2px
 		li{
 			height: $barh;
 			background-color: $blue;
@@ -285,7 +286,7 @@ ul{
 				width: 62%;
 			}
 			&:nth-child(5){
-				width: 32%;
+				width: 42%;
 			}
 			&:nth-child(6){
 				width: 78%;
@@ -303,14 +304,14 @@ body.theme-n{
 			color: $red;
 		}
 		h4{
-			border-bottom: 2px $red solid;
+			border-color: $red;
 			em{
 				background: $red;
 				&::before{
-					border-color: transparent $red transparent transparent;
+					border-right-color: $red;
 				}
 				&::after{
-					border-color: transparent transparent transparent $red;
+					border-left-color: $red;
 				}
 			}
 		}
@@ -323,7 +324,7 @@ body.theme-n{
 			color: $red;
 		}
 		.value{
-			border-left: 1.9px $red solid;
+			border-color: $red;
 			li{
 				background-color: $red;
 			}
@@ -340,14 +341,14 @@ body.theme-a{
 			color: $dorg;
 		}
 		h4{
-			border-bottom: 2px $org solid;
+			border-color: $org;
 			em{
 				background: $org;
 				&::before{
-					border-color: transparent $org transparent transparent;
+					border-right-color: $org;
 				}
 				&::after{
-					border-color: transparent transparent transparent $org;
+					border-left-color: $org;
 				}
 			}
 		}
@@ -360,7 +361,7 @@ body.theme-a{
 			color: $dorg;
 		}
 		.value{
-			border-left: 1.9px $dorg solid;
+			border-color: $dorg;
 			li{
 				background-color: $org;
 			}
@@ -377,14 +378,14 @@ body.theme-m{
 			color: $morg;
 		}
 		h4{
-			border-bottom: 2px $morg solid;
+			border-color: $morg;
 			em{
 				background: $morg;
 				&::before{
-					border-color: transparent $morg transparent transparent;
+					border-right-color: $morg;
 				}
 				&::after{
-					border-color: transparent transparent transparent $morg;
+					border-left-color: $morg;
 				}
 			}
 		}
@@ -397,7 +398,7 @@ body.theme-m{
 			color: $morg;
 		}
 		.value{
-			border-left: 1.9px $morg solid;
+			border-color: $morg;
 			li{
 				background-color: $morg;
 			}

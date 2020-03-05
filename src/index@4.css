@@ -81,7 +81,7 @@ ul {
 }
 
 #content h4 {
-  border-bottom: 2px #0f88eb solid;
+  border-bottom: 1px #0f88eb solid;
   margin: 0;
   min-width: 128px;
   font-size: 17px;
@@ -277,7 +277,7 @@ ul {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
-  border-left: 1.9px #0f88eb solid;
+  border-left: 1px #0f88eb solid;
 }
 
 #bar .value li {
@@ -306,7 +306,7 @@ ul {
 }
 
 #bar .value li:nth-child(5) {
-  width: 32%;
+  width: 42%;
 }
 
 #bar .value li:nth-child(6) {
@@ -322,7 +322,7 @@ body.theme-n #content .a .first {
 }
 
 body.theme-n #content h4 {
-  border-bottom: 2px #d84830 solid;
+  border-color: #d84830;
 }
 
 body.theme-n #content h4 em {
@@ -330,11 +330,11 @@ body.theme-n #content h4 em {
 }
 
 body.theme-n #content h4 em::before {
-  border-color: transparent #d84830 transparent transparent;
+  border-right-color: #d84830;
 }
 
 body.theme-n #content h4 em::after {
-  border-color: transparent transparent transparent #d84830;
+  border-left-color: #d84830;
 }
 
 body.theme-n #content a, body.theme-n #content h5 {
@@ -346,7 +346,7 @@ body.theme-n #bar .key {
 }
 
 body.theme-n #bar .value {
-  border-left: 1.9px #d84830 solid;
+  border-color: #d84830;
 }
 
 body.theme-n #bar .value li {
@@ -362,7 +362,7 @@ body.theme-a #content .a .first {
 }
 
 body.theme-a #content h4 {
-  border-bottom: 2px #fb9a00 solid;
+  border-color: #fb9a00;
 }
 
 body.theme-a #content h4 em {
@@ -370,11 +370,11 @@ body.theme-a #content h4 em {
 }
 
 body.theme-a #content h4 em::before {
-  border-color: transparent #fb9a00 transparent transparent;
+  border-right-color: #fb9a00;
 }
 
 body.theme-a #content h4 em::after {
-  border-color: transparent transparent transparent #fb9a00;
+  border-left-color: #fb9a00;
 }
 
 body.theme-a #content a, body.theme-a #content h5 {
@@ -386,7 +386,7 @@ body.theme-a #bar .key {
 }
 
 body.theme-a #bar .value {
-  border-left: 1.9px #fa7f02 solid;
+  border-color: #fa7f02;
 }
 
 body.theme-a #bar .value li {
@@ -402,7 +402,7 @@ body.theme-m #content .a .first {
 }
 
 body.theme-m #content h4 {
-  border-bottom: 2px #ff6700 solid;
+  border-color: #ff6700;
 }
 
 body.theme-m #content h4 em {
@@ -410,11 +410,11 @@ body.theme-m #content h4 em {
 }
 
 body.theme-m #content h4 em::before {
-  border-color: transparent #ff6700 transparent transparent;
+  border-right-color: #ff6700;
 }
 
 body.theme-m #content h4 em::after {
-  border-color: transparent transparent transparent #ff6700;
+  border-left-color: #ff6700;
 }
 
 body.theme-m #content a, body.theme-m #content h5 {
@@ -426,7 +426,7 @@ body.theme-m #bar .key {
 }
 
 body.theme-m #bar .value {
-  border-left: 1.9px #ff6700 solid;
+  border-color: #ff6700;
 }
 
 body.theme-m #bar .value li {
