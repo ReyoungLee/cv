@@ -70,6 +70,7 @@ ul{
 	top: 0;
 	left: 0;
 	overflow: hidden;
+	opacity: .4;
 }
 #content{
 	@include flexbox();
@@ -152,7 +153,7 @@ ul{
 	}
 	$p: 30px;
 	.left{
-		width: 32%;
+		width: 35%;
 		padding: $p $p/2 $p $p;
 	}
 	.right{
@@ -192,7 +193,6 @@ ul{
 		}
 	}
 	.d{
-		background: url(../img/sign.svg) right bottom no-repeat;
 		background-size: 20%;
 		padding-bottom: 20px;
 		p{

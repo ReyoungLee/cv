@@ -43,6 +43,7 @@ ul {
   top: 0;
   left: 0;
   overflow: hidden;
+  opacity: .4;
 }
 
 #content {
@@ -144,7 +145,7 @@ ul {
 }
 
 #content .left {
-  width: 32%;
+  width: 35%;
   padding: 30px 15px 30px 30px;
 }
 
@@ -191,7 +192,6 @@ ul {
 }
 
 #content .d {
-  background: url(../img/sign.svg) right bottom no-repeat;
   background-size: 20%;
   padding-bottom: 20px;
 }
