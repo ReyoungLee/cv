@@ -129,7 +129,7 @@ ul {
   min-height: 100%;
 }
 #content .left {
-  width: 35%;
+  width: 30%;
   padding: 30px 15px 30px 30px;
 }
 #content .right {
@@ -166,6 +166,8 @@ ul {
 #content .c .employer {
   font-style: italic;
   font-size: 14px;
+  font-weight: 600;
+  margin-left: -10px;
 }
 #content .d {
   background-size: 20%;
